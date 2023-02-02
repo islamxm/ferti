@@ -1,0 +1,74 @@
+.promoItem {
+    width: 100%;
+    background: #F4F6FE;
+    border: 1px solid rgba(173, 185, 250, 0.55);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+    &__in {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-bottom: 15px;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+
+        &_item {
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #FFFFFF;
+            border: 0.8px solid rgba(173, 185, 250, 0.55);
+            border-radius: 2px;
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 15px;
+            color: #545454;
+        }
+    }
+
+    &__name {
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_item {
+            text-align: center; 
+            color: var(--blue);
+            @include def-anim; 
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 30px;
+            &:hover {
+                color: var(--orange);
+            }
+        }
+    }
+}

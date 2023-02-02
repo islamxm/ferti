@@ -1,0 +1,45 @@
+.bc {
+    display: flex;
+
+
+    &__item {
+        margin-right: 7px;
+        position: relative;
+        padding-right: 20px;
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 12px;
+            height: 7px;
+            background-image: url('../img/icons/arrow-right.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            top: calc(50% - 3px);
+            right: 0;
+        }
+
+        a {
+            font-size: 14px;
+            line-height: 17px;
+            @include def-anim;
+            color: var(--blue);
+            
+            &:hover {
+                color: var(--orange);
+            }
+        }
+
+        &:last-child {
+
+            a {
+                color: #aaa;
+                
+            }
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

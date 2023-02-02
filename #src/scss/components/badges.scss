@@ -1,0 +1,28 @@
+.badges {
+
+    &__in {
+        padding: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 12px; 
+        background: #F4F6FE;
+        border: 1px solid rgba(173, 185, 250, 0.5);
+        border-radius: 2px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: #515151;
+        cursor: pointer;
+        margin: 0 5px;
+        margin-bottom: 10px;
+    }
+}

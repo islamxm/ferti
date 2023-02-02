@@ -1,0 +1,21 @@
+.pricingBlock {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__head {
+        margin-bottom: 50px;
+    }
+
+    &__body {
+        display: flex;
+        margin-left: -10px;
+        margin-right: -10px;
+
+        &_item {
+            margin: 0 10px;
+            width: calc((100% / 4) - 20px);
+        }
+    }
+}

@@ -1,0 +1,11 @@
+:root {
+    --blue: #3B6FB4;
+    --orange: #E38B47;
+    --light_bg: #F3F4FA;
+    --text: #2F2F2F;
+
+}
+
+@mixin def-anim {
+    transition: all .2s ease;
+}

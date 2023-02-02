@@ -1,0 +1,23 @@
+.revs {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__head {
+        margin-bottom: 50px;
+    }
+
+    &__body {
+
+        &_item {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

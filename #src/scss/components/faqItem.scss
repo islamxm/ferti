@@ -1,0 +1,35 @@
+.faqItem {
+    background: linear-gradient(180deg, #F4F6FE 0%, rgba(244, 246, 254, 0) 100%);
+    border: 1px solid rgba(173, 185, 250, 0.5);
+    border-radius: 7px;
+    height: 100%;
+    
+    &__head {
+        padding: 20px 50px 20px 80px;
+        color: var(--blue);
+        border-bottom: 1px dashed #C7C7C7;
+        font-weight: 700;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            width: 33px;
+            height: 33px;
+            content: '';
+            background-image: url('../img/icons/check-orange.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            top: calc(50% - (33px / 2));
+            left: 30px;
+        }
+    }
+
+    &__body {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25px;
+        color: #3D3D3D;
+        padding: 15px 30px; 
+    }
+}

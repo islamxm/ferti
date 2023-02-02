@@ -1,0 +1,25 @@
+.doctors {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__head {
+        margin-bottom: 50px;
+    }
+
+    &__body {
+
+       
+    }
+
+    &__item {
+        margin-bottom: 30px;
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,51 @@
+.prices {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__head {
+        margin-bottom: 50px;
+    }
+
+    &__body {
+
+        &_table {
+            width: 100%;
+            border-collapse: collapse;
+
+            tr {
+
+                th {
+                    color: #fff;
+                    padding: 25px 40px;
+                    width: 50%;
+                    background-color: var(--blue);
+
+                    &:first-child {
+                        text-align: left;
+                    }
+                }
+
+                td {
+                    width: 50%;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 18px;
+                    padding: 25px 40px;
+                    cursor: pointer;
+                    @include def-anim;
+                    border-bottom: 1px dashed #CECECE;
+                    
+                    &:hover {
+                        color: var(--blue);
+                    }
+
+                    &:last-child {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
