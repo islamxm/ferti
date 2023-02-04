@@ -18,10 +18,19 @@
 
             .sidebar__main_item_head {
                 &:after {
-                    transform: rotate(180deg);
+                    transform: rotate(0);
                 }
             }
         }
+
+        // &_item.hide {
+
+        //     .acc-body {
+        //         height: 0;
+        //     }
+        // }
+
+       
 
         &_item {
             border-bottom: 1px dashed #aaa;
@@ -53,14 +62,23 @@
                     background-position: center;
                     background-size: contain;
                     @include def-anim;
+                    transform: rotate(-90deg);
                 }
             
             }
 
-            &_body {
+            .acc-body {
                 height: 0;
+            }
+
+            &_body {
+                // height: 0;
                 overflow: hidden;
                 transition: all .2s ease;
+
+                &_wrapper {
+                    padding: 0 0 10px 0;
+                }
 
                 &_li {
                     padding: 3px 0;
@@ -81,6 +99,7 @@
                             @include def-anim;
                             top: 5px;
                             left: 0;
+                          
                         }
 
                         &:hover {
@@ -99,6 +118,67 @@
 
     &__nav {
         margin-bottom: 50px;
+        padding: 0 35px;
+
+        &_item.active {
+
+            .sidebar__nav_item_head {
+                color: var(--orange);
+                
+            }
+            
+        }
+
+        &_item {
+            border-bottom: 1px dashed #C7C7C7;
+
+            &_head {
+                padding: 10px 0;
+                @include def-anim;
+                text-transform: uppercase;
+                color: var(--blue);
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            &_body {
+                
+                &_wrapper {
+                    padding: 0 0 10px 0;
+                }
+                &_li {
+                    padding: 3px 0;
+
+                    a {
+                        position: relative;
+                        padding-left: 10px;
+                        font-size: 12px;    
+                        line-height: 17px;
+                        
+                        &:after {
+                            position: absolute;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 10px;
+                            content: '';
+                            background-color: var(--text);
+                            @include def-anim;
+                            top: 5px;
+                            left: 0;
+                          
+                        }
+
+                        &:hover {
+                            color: var(--blue);
+
+                            &:after {
+                                background-color: var(--blue);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &__promos {

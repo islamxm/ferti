@@ -78,3 +78,53 @@ body {
     text-align: center;
 }
 
+
+.acc-body {
+    height: 0;
+    overflow: hidden;
+    @include def-anim;
+}
+
+
+.drop-head {
+
+}
+
+.drop-body {
+    position: fixed;
+    z-index: -1;
+    transform: scale(0) translateY(24px);
+    @include def-anim;
+    padding: 15px 25px;
+}
+
+.drop-item.active {
+
+    .drop-body {
+        transform: scale(1) translateY(24px);
+        z-index: 10000000;
+    }
+}
+
+.drop-menu {
+
+    &__item {
+        padding: 7px 0;
+        border-bottom: 1px dashed rgba(173, 185, 250, 0.55);
+        &:last-child {
+            border: none
+        }
+
+        a {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            display: block;
+            @include def-anim;
+
+            &:hover {
+                color: var(--blue);
+            }
+        }
+    }
+}
