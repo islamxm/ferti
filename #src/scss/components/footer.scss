@@ -2,7 +2,7 @@
     box-shadow: 0px -12px 45px rgba(173, 185, 250, 0.3);
     border-radius: 2px;
     &__top {
-
+        border-bottom: 1px solid #DCDCDC;
         &_in {
             padding: 25px 0;
             display: flex;
@@ -145,6 +145,7 @@
 
     &__bottom {
         background: #F3F4FA;
+        
         &_in {
             padding: 24px 0;
             display: flex;  
