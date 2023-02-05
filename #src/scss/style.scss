@@ -18,13 +18,22 @@
 @import './components/revItem.scss';
 @import './components/badges.scss';
 @import './components/footer.scss';
+@import './components/input.scss';
+@import './components/mobmenu.scss';
 
+
+//blocks
 @import './blocks/pricingBlock.scss';
 @import './blocks/ecoParts.scss';
 @import './blocks/doctors.scss';
 @import './blocks/faq.scss';
 @import './blocks/revs.scss';
 @import './blocks/prices.scss';
+@import './blocks/textBlock.scss';
+
+@import './modals/MakeAppModal.scss';
+@import './modals/CookiesModal.scss';
+@import './modals/CityModal.scss';
 
 //pages
 

@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 
@@ -15,6 +16,12 @@ li {
     list-style: none;
 }
 
+button {
+    background-color: unset;
+    border: none;
+
+    outline: none;
+}
 
 body {
     width: 100%;
@@ -42,7 +49,14 @@ body {
     padding-top: 90px;
     padding-left: 50px;
     overflow: hidden;
+}
 
+@media (max-width: 1200px) {
+    .main {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+    }
 }
 
 .container {
@@ -51,6 +65,8 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+
+
 
 .dashed-link-text {
     color: var(--blue);
@@ -127,4 +143,90 @@ body {
             }
         }
     }
+}
+
+.modal {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(#000, .3);
+    transition: all .5s ease;
+    z-index: -1;
+    opacity: 0;
+    
+
+    &__close {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -20px;
+        right: -40px;
+        cursor: pointer;
+        background-color: unset;
+        border: none;
+        background-color: #fff;
+        border-radius: 100%;
+        @include def-anim;
+
+        svg {
+            path {
+                @include def-anim;
+            }
+        }
+
+        &:hover {
+            transform: rotate(90deg);
+            svg {
+                path {
+                    fill: red;
+                }
+            }
+        }
+    }
+
+    &__layer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 10px 50px;
+    }
+
+    &__in {
+        padding: 30px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        // overflow: hidden;
+        width: 100%;
+        position: relative;
+        transform: scale(0);
+        transition: all .5s ease;
+    }
+
+    &__head {
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    &__head.center {
+        text-align: center;
+    }
+}
+
+.modal.is-open {
+    opacity: 1;
+    z-index: 100000000;
+
+    .modal__in {
+        transform: scale(1);
+    }
+
 }

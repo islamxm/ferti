@@ -1,4 +1,4 @@
-const accordeon = (wrapperQuery, itemsQuery) => {
+const subacc = (wrapperQuery, itemsQuery) => {
 
     if(wrapperQuery && itemsQuery) {
 
@@ -11,7 +11,7 @@ const accordeon = (wrapperQuery, itemsQuery) => {
 
             const hideBody = (currentIndex) => {
                 items.forEach((i, index) => {
-                    const list = i.querySelector('.acc-body');
+                    const list = i.querySelector('.sub-body');
                     if(index !== currentIndex) {
                         i.classList.remove('active')
                         list.style.height = 0;
@@ -26,10 +26,10 @@ const accordeon = (wrapperQuery, itemsQuery) => {
 
                 i.addEventListener('click', e => {
                     
-                    if(e.target.classList.contains('acc-head')) {
+                    if(e.target.classList.contains('sub-head')) {
                         e.currentTarget.classList.toggle('active')
                         hideBody(index);
-                        const list = e.currentTarget.querySelector('.acc-body');
+                        const list = e.currentTarget.querySelector('.sub-body');
 
                         if(i.classList.contains('active')) {
                             list.style.height = `${list.scrollHeight}px`
@@ -45,4 +45,4 @@ const accordeon = (wrapperQuery, itemsQuery) => {
 
 }
 
-export default accordeon;
+export default subacc;

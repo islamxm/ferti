@@ -1,13 +1,22 @@
 const searchToggle = () => {
-    const btn = document.querySelector('.header__bottom_search_btn');
-    const body = document.querySelector('.header__bottom_search_body');
-    const wrapper = document.querySelector('.header__bottom_in');
-
+    const btn = document.querySelectorAll('.header__bottom_search_btn');
+    const body = document.querySelectorAll('.header__bottom_search_body');
+    const wrapper = document.querySelectorAll('.header__bottom_in');
+    const mobWrap = document.querySelector('.mobmenu__head_main_search');
     if(wrapper && btn && body) {
-        btn.addEventListener('click', () => {
-            wrapper.classList.toggle('search');
+        btn.forEach(bt => {
+            bt.addEventListener('click', () => {
+                wrapper.forEach(i => {
+                    i.classList.toggle('search');
+                })
+                mobWrap.classList.toggle('active')
+            })
         })
+        
     }
+    
+
+    
 }
 
 export default searchToggle;

@@ -14,7 +14,6 @@ const dropdown = (elemsQuery) => {
     if(elems?.length > 0) {
         elems.forEach(i => {
             const elemCoords = getCoords(i);
-            console.log(elemCoords)
             const menu = i.querySelector('.drop-body');
             menu.style.cssText = `top: ${elemCoords.top}px; left: ${elemCoords.left}px`
             i.addEventListener('mouseover', e => {

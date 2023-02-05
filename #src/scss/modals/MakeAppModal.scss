@@ -1,0 +1,40 @@
+.MakeAppModal {
+
+    &__in {
+        max-width: 350px;
+    }
+
+    &__head {
+        margin-bottom: 25px;
+    }
+
+    &__body {
+
+        &_inps {
+            margin-bottom: 30px;
+
+            &_item {
+                margin-bottom: 12px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &_ex {
+            text-align: center;
+            color: #868686;
+            font-size: 10px;
+            line-height: 18px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        &_action {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

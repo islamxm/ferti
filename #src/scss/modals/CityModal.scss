@@ -1,0 +1,37 @@
+.CityModal {
+
+    &__in {
+        max-width: 525px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    &__head {
+        margin-bottom: 15px;
+    }
+
+    &__body {
+
+        &_list {
+            max-height: 310px;
+            overflow-y: auto;
+        }
+
+        &_item {
+            font-size: 14px;
+            line-height: 18px;
+            padding: 5px 0;
+            font-weight: 500;
+            cursor: pointer;
+            @include def-anim;
+
+            &:hover {
+                color: var(--orange);
+            }
+        }
+
+        &_item.active {
+            color: var(--blue);
+        }
+    }
+}

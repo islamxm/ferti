@@ -1,0 +1,42 @@
+.textBlock {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__head {
+        margin-bottom: 40px;
+    }
+
+    &__body {
+
+        &_r {
+            padding-left: 40px;
+            position: relative;
+            margin-bottom: 30px;
+
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 20px;
+                height: 100%;
+                width: 5px;
+                border-radius: 5px;
+                background-color: var(--orange);
+                content: '';
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    &__body > p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+    }
+}

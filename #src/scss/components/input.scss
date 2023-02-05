@@ -1,0 +1,53 @@
+.input {
+ 
+    width: 100%;
+    position: relative;
+
+    
+
+    &__el {
+        display: block;
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid rgba(173, 185, 250, 0.55);
+        border-radius: 2px;
+        color: var(--text);
+        padding: 12px 15px;
+        outline: none;
+
+        &::placeholder{
+            text-transform: uppercase;
+        }
+
+        &:disabled {
+            opacity: .5;
+            pointer-events: none;
+            touch-action: none;
+        }
+    }
+}
+
+.input.error {
+    
+    .input__el {
+        border-color: red;
+    }
+}
+
+.input.required {
+
+
+    &:after {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        top: 5px;
+        right: 8px;
+        content: '*';
+        color: red;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 500;
+        display: block;
+    }
+}

@@ -45,6 +45,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "micromodal": "^0.4.10",
     "swiper": "^9.0.1"
   }
 }
