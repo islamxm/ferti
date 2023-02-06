@@ -21,3 +21,17 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 768px) {
+    .revs {
+
+        &__in {
+            padding: 30px 0;
+        }
+        
+        &__head {
+            margin-bottom: 30px;
+        }
+
+    }
+}

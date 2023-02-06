@@ -28,3 +28,45 @@
         
     }
 }
+
+@media (max-width: 1200px) {
+    .faq {
+
+        &__in {
+
+        }
+
+        &__body {
+
+            &_item {
+                width: calc((100% / 2) - 18px);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .faq {
+
+        &__in {
+            padding: 30px 0;
+        }
+
+        &__head {
+            margin-bottom: 30px;
+        }
+
+        
+    }
+}
+
+@media (max-width: 600px) {
+    .faq {
+
+        &__body {
+            &_item {
+                width: calc(100% - 18px);
+            }
+        }
+    }
+}

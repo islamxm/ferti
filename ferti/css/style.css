@@ -1101,8 +1101,8 @@ body {
 }
 .header__bottom_nav_list_item_head {
   font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
   position: relative;
 }
 .header__bottom_nav_list_item_body {
@@ -2052,6 +2052,11 @@ body {
     align-items: center;
   }
 }
+@media (max-width: 600px) {
+  .doctorCard {
+    padding: 25px 10px;
+  }
+}
 .faqItem {
   background: linear-gradient(180deg, #F4F6FE 0%, rgba(244, 246, 254, 0) 100%);
   border: 1px solid rgba(173, 185, 250, 0.5);
@@ -2143,6 +2148,27 @@ body {
   color: var(--blue);
 }
 
+@media (max-width: 768px) {
+  .revItem {
+    padding: 20px 15px;
+  }
+  .revItem__head_avatar {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  .revItem__head_body_name {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .revItem__head_body_date {
+    line-height: 19px;
+  }
+  .revItem__text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
 .badges__in {
   padding: 40px 0;
   display: flex;
@@ -2346,6 +2372,110 @@ body {
   fill: var(--orange);
 }
 
+@media (max-width: 1200px) {
+  .footer__top {
+    border: none;
+  }
+  .footer__top_in {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  .footer__top_ph {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer__top_actions {
+    width: 100%;
+  }
+  .footer__top_actions_item {
+    width: calc(33.3333333333% - 18px);
+  }
+  .footer__top_actions_item .button {
+    width: 100%;
+  }
+  .footer__main_body {
+    width: 100%;
+    order: 2;
+  }
+  .footer__main_body_part {
+    width: calc(50% - 40px);
+  }
+  .footer__main_in {
+    flex-wrap: wrap;
+  }
+  .footer__main_map {
+    width: 100%;
+    flex: 0 0 auto;
+    margin-bottom: 35px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__main_map_el {
+    flex: 1 0 auto;
+  }
+  .footer__main_map_el iframe {
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .footer__top_ph_item a {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .footer__top_actions {
+    flex-wrap: wrap;
+  }
+  .footer__top_actions_item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .footer__main_in {
+    padding-bottom: 0;
+  }
+  .footer__main_body {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .footer__main_body_part {
+    margin: 0 5px;
+    width: calc(50% - 10px);
+    margin-bottom: 30px;
+  }
+  .footer__main_body_part_head {
+    margin-bottom: 15px;
+  }
+  .footer__main_body_part_item {
+    padding: 0;
+  }
+  .footer__main_body_part_item a {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .footer__bottom_in {
+    flex-wrap: wrap;
+  }
+  .footer__bottom_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__bottom_main_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__bottom_main_links_item {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .footer__bottom_soc {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .input {
   width: 100%;
   position: relative;
@@ -2720,6 +2850,24 @@ body {
   justify-content: center;
 }
 
+@media (max-width: 1200px) {
+  .faq__body_item {
+    width: calc(50% - 18px);
+  }
+}
+@media (max-width: 768px) {
+  .faq__in {
+    padding: 30px 0;
+  }
+  .faq__head {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .faq__body_item {
+    width: calc(100% - 18px);
+  }
+}
 .revs__in {
   padding: 40px 0;
 }
@@ -2735,6 +2883,14 @@ body {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .revs__in {
+    padding: 30px 0;
+  }
+  .revs__head {
+    margin-bottom: 30px;
+  }
+}
 .prices__in {
   padding: 40px 0;
 }
@@ -2771,6 +2927,24 @@ body {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .prices__in {
+    padding: 30px 0;
+  }
+  .prices__head {
+    margin-bottom: 30px;
+  }
+  .prices__body_table tr th {
+    padding: 15px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .prices__body_table tr td {
+    padding: 15px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
 .textBlock__in {
   padding: 40px 0;
 }
@@ -2794,13 +2968,13 @@ body {
 }
 .textBlock__body_r p {
   font-weight: 300;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 16px;
+  line-height: 19px;
 }
 .textBlock__body > p {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 19px;
 }
 
 @media (max-width: 768px) {

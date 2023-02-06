@@ -69,3 +69,34 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .revItem {
+
+        padding: 20px 15px;
+
+        &__head {
+            &_avatar {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+            }
+
+            &_body {
+                &_name {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                &_date {
+                    
+                    line-height: 19px;
+                }
+            }
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}

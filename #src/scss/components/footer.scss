@@ -224,3 +224,148 @@
 
     }
 }
+
+@media (max-width: 1200px) {
+    .footer {
+
+        &__top {
+            border: none;
+           
+            &_in {
+                flex-wrap: wrap;
+                padding-bottom: 0;
+            }
+
+            &_ph {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            &_actions {
+                width: 100%;
+
+                &_item {
+                    width: calc((100% / 3) - 18px);
+
+                    .button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &__main {
+
+            &_body {
+                width: 100%;
+                order: 2;
+                &_part {
+                    width: calc((100% / 2) - 40px);
+                }
+            }
+            &_in {
+                flex-wrap: wrap;
+            }
+
+
+            &_map {
+                width: 100%;
+                flex: 0 0 auto;
+                margin-bottom: 35px;
+                height: 325px;
+                display: flex;
+                flex-direction: column;
+
+                &_el {
+                    flex: 1 0 auto;
+                    iframe {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+
+        &__top {
+
+            &_ph {
+
+                &_item {
+                    a {
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
+                }
+            }
+            &_actions {
+                flex-wrap: wrap;
+
+                &_item {
+                    width: 100%;
+                    margin: 0;
+                    margin-bottom: 10px;    
+                }
+            }
+        }
+
+        &__main {
+
+            &_in {
+                padding-bottom: 0;
+            }
+            &_body {    
+                margin-left: -5px;
+                margin-right: -5px;
+                &_part {    
+                    margin: 0 5px;
+                    width: calc((100% / 2) - 10px);
+                    margin-bottom: 30px;
+
+                    &_head {
+                        margin-bottom: 15px;
+                    }
+                    &_item {
+                        padding: 0;
+                        a {
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__bottom {
+
+            &_in {
+                flex-wrap: wrap;
+            }
+            &_main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                &_links {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &_item {
+                        margin: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            &_soc {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}

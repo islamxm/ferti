@@ -49,3 +49,34 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .prices {
+
+        &__in {
+            padding: 30px 0;
+        }
+
+        &__head {
+            margin-bottom: 30px;
+        }
+
+        &__body {
+            
+            &_table {
+                tr {
+                    th {
+                        padding: 15px;
+                        font-size: 12px;
+                        line-height: 17px;
+                    }
+                    td {
+                        padding: 15px;
+                        font-size: 12px;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
