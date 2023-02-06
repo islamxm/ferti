@@ -6,6 +6,7 @@ import searchToggle from './modules/searchToggle.js';
 import MicroModal from 'micromodal';
 import subacc from './modules/subacc.js';
 import mobmenu from './modules/mobmenu.js';
+import shText from './modules/shText.js';
 
 flsFuncs.isWebp();
 
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdown('.drop-item')
     searchToggle();
     mobmenu();
+    shText('.textBlock', '.textBlock__action_btn', '.textBlock__body', '.textBlock__toggle')
     MicroModal.init({
         disableScroll: true
     });

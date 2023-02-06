@@ -13,7 +13,8 @@
     @include def-anim;
     border: 1px solid transparent;
     cursor: pointer;
-
+    text-transform: uppercase;
+    
     &:disabled {
         opacity: .6;
         pointer-events: none;
