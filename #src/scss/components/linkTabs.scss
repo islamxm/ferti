@@ -30,3 +30,17 @@
         color: #fff;
     }
 }
+
+@media (max-width: 600px) {
+    .linkTabs {
+        flex-wrap: nowrap;
+        overflow-y: auto;
+
+        &__item {
+            font-size: 12px;
+            line-height: 15px;
+            padding: 14px 20px;
+            white-space: nowrap;
+        }
+    }
+}

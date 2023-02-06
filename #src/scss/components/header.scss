@@ -46,7 +46,7 @@
                 cursor: pointer;
                 
                 &_label {
-                    
+                    display: none;
                 }
             }
 
@@ -56,9 +56,8 @@
                 // margin-left: -15px;
                 // margin-right: -15px;
                 display: flex;
-                // flex-direction: column;
-                align-items: center;
-
+                flex-direction: column;
+                align-items: flex-start;
                 &_item {
                     margin: 0 15px;
                     padding-left: 14px;
@@ -92,14 +91,13 @@
                     font-size: 14px;
                     line-height: 20px;
                     @include def-anim;
-
                     margin-bottom: 5px;
                     &:last-child {
                         margin-bottom: 0;
                     }
 
                     &:hover {
-                        color: var(--orange) !important;
+                        color: var(--blue) !important;
                     }
 
                     &:after {
@@ -116,9 +114,9 @@
                     }
                 }
 
-                &_item.active {
-                    color: var(--blue);
-                }
+                // &_item.active {
+                //     color: var(--blue);
+                // }
             }
 
             &_lang {
@@ -349,16 +347,7 @@
 @media (max-width: 1200px) {
     .header {
 
-        &__top {
-
-            &_main {
-
-                &_adr {
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
-            }
-        }
+       
 
         &__bottom {
 

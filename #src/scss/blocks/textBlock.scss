@@ -40,3 +40,32 @@
         line-height: 32px;
     }
 }
+
+@media (max-width: 768px) {
+
+    .textBlock {
+
+        &__head {
+            margin-bottom: 30px;
+        }
+        
+        &__in {
+            padding: 30px 0;
+        }
+
+        &__body {
+            &_r {
+
+                p {
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+            }
+        }
+        &__body > p {
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+}
+

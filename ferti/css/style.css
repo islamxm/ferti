@@ -750,8 +750,14 @@ body {
     padding-top: 40px;
   }
 }
+@media (max-width: 768px) {
+  .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .container {
-  max-width: 1430px;
+  max-width: 1300px;
   padding: 0 15px;
   width: 100%;
   margin: 0 auto;
@@ -774,6 +780,12 @@ body {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
 .def-title {
   font-weight: 500;
   font-size: 32px;
@@ -785,6 +797,12 @@ body {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .def-title {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
 .acc-body {
   height: 0;
   overflow: hidden;
@@ -933,11 +951,15 @@ body {
   margin: 0 20px;
   cursor: pointer;
 }
+.header__top_main_city_label {
+  display: none;
+}
 .header__top_main_adr {
   font-size: 10px;
   line-height: 20px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .header__top_main_adr_item {
   margin: 0 15px;
@@ -974,7 +996,7 @@ body {
   margin-bottom: 0;
 }
 .header__top_main_ph_item:hover {
-  color: var(--orange) !important;
+  color: var(--blue) !important;
 }
 .header__top_main_ph_item:after {
   position: absolute;
@@ -987,9 +1009,6 @@ body {
   height: 21px;
   top: calc(50% - 11.5px);
   left: 0;
-}
-.header__top_main_ph_item.active {
-  color: var(--blue);
 }
 .header__top_main_lang {
   display: flex;
@@ -1158,10 +1177,6 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .header__top_main_adr {
-    flex-direction: column;
-    align-items: flex-start;
-  }
   .header__bottom_in.search .header__bottom_actions {
     opacity: 1;
     pointer-events: all;
@@ -1778,6 +1793,18 @@ body {
   color: #fff;
 }
 
+@media (max-width: 600px) {
+  .linkTabs {
+    flex-wrap: nowrap;
+    overflow-y: auto;
+  }
+  .linkTabs__item {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 14px 20px;
+    white-space: nowrap;
+  }
+}
 .doctorCard {
   padding: 30px 40px;
   background: #FFFFFF;
@@ -1809,6 +1836,9 @@ body {
 .doctorCard__main_rating_label {
   margin-top: 4px;
   text-align: center;
+}
+.doctorCard__main_at {
+  display: none;
 }
 .doctorCard__body {
   padding: 0 50px;
@@ -1966,6 +1996,62 @@ body {
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .doctorCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .doctorCard__main {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .doctorCard__main_at {
+    text-align: center;
+    display: block;
+  }
+  .doctorCard__main_at_name {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+  .doctorCard__main_at_pos {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .doctorCard__body {
+    padding: 0;
+  }
+  .doctorCard__body_bgs {
+    justify-content: center;
+  }
+  .doctorCard__body_main {
+    display: flex;
+    justify-content: center;
+  }
+  .doctorCard__body_main_name {
+    display: none;
+  }
+  .doctorCard__body_main_ex {
+    display: none;
+  }
+  .doctorCard__body_prices {
+    margin-bottom: 30px;
+  }
+  .doctorCard__info {
+    text-align: center;
+  }
+  .doctorCard__info_m {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .faqItem {
   background: linear-gradient(180deg, #F4F6FE 0%, rgba(244, 246, 254, 0) 100%);
   border: 1px solid rgba(173, 185, 250, 0.5);
@@ -2466,6 +2552,23 @@ body {
   width: calc(25% - 20px);
 }
 
+@media (max-width: 1200px) {
+  .pricingBlock__head {
+    margin-bottom: 10px;
+  }
+  .pricingBlock__body {
+    overflow-x: auto;
+    padding-top: 20px;
+  }
+  .pricingBlock__body_item {
+    min-width: 230px;
+  }
+}
+@media (max-width: 600px) {
+  .pricingBlock__in {
+    padding: 30px 0;
+  }
+}
 .ecoParts__in {
   padding: 40px 0;
 }
@@ -2560,6 +2663,18 @@ body {
 .ecoParts__body_slider_nav_item.prev svg {
   transform: rotate(180deg);
 }
+@media (max-width: 768px) {
+  .ecoParts__in {
+    padding: 30px 0;
+  }
+  .ecoParts__head {
+    margin-bottom: 30px;
+  }
+  .ecoParts__body_slider {
+    margin: 0 auto 0 0;
+    overflow: visible;
+  }
+}
 .doctors__in {
   padding: 40px 0;
 }
@@ -2575,6 +2690,14 @@ body {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .doctors__in {
+    padding: 30px 0;
+  }
+  .doctors__head {
+    margin-bottom: 30px;
+  }
+}
 .faq__in {
   padding: 40px 0;
 }
@@ -2680,6 +2803,22 @@ body {
   line-height: 32px;
 }
 
+@media (max-width: 768px) {
+  .textBlock__head {
+    margin-bottom: 30px;
+  }
+  .textBlock__in {
+    padding: 30px 0;
+  }
+  .textBlock__body_r p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .textBlock__body > p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
 .MakeAppModal__in {
   max-width: 350px;
 }

@@ -19,3 +19,30 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .pricingBlock {
+
+        &__head {
+            margin-bottom: 10px;
+        }
+
+        &__body {
+            overflow-x: auto;
+            padding-top: 20px;
+
+            &_item {
+                min-width: 230px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .pricingBlock {
+
+        &__in {
+            padding: 30px 0;
+        }
+    }
+}
