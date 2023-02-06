@@ -1,0 +1,81 @@
+.fixCont {
+    position: fixed;
+    bottom: 10%;
+    left: 20px;
+    width: 200px;
+    z-index: 1000;
+
+    &__item {
+        
+        margin-bottom: 10px;
+    }
+
+    &__btn {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 12px;
+        padding-left: calc(35px + 12px);
+        position: relative;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        color: #fff;
+        width: 100%;
+        border-radius: 2px;
+        cursor: pointer;
+        @include def-anim;
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    &__btn.orange {
+        background-color: var(--orange);
+
+        &:after {
+            position: absolute;
+            content: '';
+            top: calc(50% - 12.5px);
+            left: 12px;
+            width: 25px;
+            height: 25px;
+            background-image: url('../img/icons/fixcont-1.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+
+    &__btn.blue {
+        background-color: var(--blue);
+        &:after {
+            position: absolute;
+            content: '';
+            top: calc(50% - 12.5px);
+            left: 12px;
+            width: 25px;
+            height: 25px;
+            background-image: url('../img/icons/fixcont-2.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .fixCont {
+
+        width: 100%;
+        left: 0;
+        bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__item {
+            width: 50%;
+        }
+    }
+}
