@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // accordeon('.mobmenu__body', '.mobmenu__body_item-drop')
     // subacc('.mobmenu__body_item_menu_list', '.mobmenu__body_item_menu_item-submenu')
     dropdown('.drop-item')
+    document.addEventListener('scroll', () => dropdown('.drop-item'))
     searchToggle();
     mobmenu();
     shText('.textBlock', '.textBlock__action_btn', '.textBlock__body', '.textBlock__toggle')
