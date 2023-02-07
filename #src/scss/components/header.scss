@@ -22,6 +22,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: relative;
         }
 
         &_logo {
@@ -349,10 +350,31 @@
     }
 }
 
+@media (max-width: 1280px) {
+    .header {
+
+        &__bottom {
+
+            &_actions {
+                display: none;
+            }
+        }
+    }
+}
+ 
 @media (max-width: 1200px) {
     .header {
 
-       
+        &__top {
+
+            &_in {
+
+            }
+
+            .header__bottom_search {
+                display: none;
+            }
+        }
 
         &__bottom {
 
@@ -367,7 +389,7 @@
             }
 
             &_nav {
-                display: none;
+                // display: none;
             }
 
             &_search {
@@ -378,70 +400,7 @@
                 }
             }
 
-            &_burger {
-                display: block;
-                width: 40px;
-                height: 40px;
-                position: relative;
-                flex: 0 0 auto;
-                cursor: pointer;
-                margin-left: 40px;
-
-                span {
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 100%;
-                    background-color: var(--text);
-                    display: block;
-                    position: absolute;
-                    @include def-anim;
-
-                    &:nth-child(1) {
-                        top: 0;
-                        left: 0;
-                    }
-                    &:nth-child(2) {
-                        top: 0;
-                        left: calc(50% - 5px);
-                    }
-                    &:nth-child(3) {
-                        top: 0;
-                        right: 0;
-                    }
-                    &:nth-child(4) {
-                        top: calc(50% - 5px);
-                        left: 0;
-                    }
-                    &:nth-child(5) {
-                        top: calc(50% - 5px);
-                        left: calc(50% - 5px);
-                    }
-                    &:nth-child(6) {
-                        top: calc(50% - 5px);
-                        right: 0;
-                    }
-                    &:nth-child(7) {
-                        bottom: 0;
-                        left: 0;
-                    }
-                    &:nth-child(8) {
-                        bottom: 0;
-                        left: calc(50% - 5px);
-                    }
-                    &:nth-child(9) {
-                        bottom: 0;
-                        right: 0;
-                    }
-                }
-
-                &:active {
-
-                    span {
-                        transform: scale(0.7);
-                        background-color: var(--orange);
-                    }
-                }
-            }
+            
         }
     }
 }

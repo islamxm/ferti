@@ -139,6 +139,12 @@
                 color: var(--blue);
                 font-weight: 600;
                 cursor: pointer;
+                font-size: 12px;
+                line-height: 16px;
+
+                &:hover {
+                    color: var(--orange);
+                }
             }
 
             &_body {

@@ -104,6 +104,18 @@
                         }
                     }
                 }
+
+                &_item-all {
+                    a {
+                        color: var(--blue);
+                        text-decoration: underline;
+                        text-decoration-style: dashed;
+
+                        &:hover {
+                            color: var(--orange)
+                        }
+                    }
+                }
             }
         }   
 

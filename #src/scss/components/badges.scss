@@ -24,5 +24,10 @@
         cursor: pointer;
         margin: 0 5px;
         margin-bottom: 10px;
+        @include def-anim;
+
+        &:hover {
+            background-color: #fff;
+        }
     }
 }
