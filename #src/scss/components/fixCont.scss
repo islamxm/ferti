@@ -66,16 +66,16 @@
 
 @media (max-width: 600px) {
     .fixCont {
-
         width: 100%;
         left: 0;
-        bottom: 30px;
+        bottom: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-
+       
         &__item {
             width: 50%;
+            margin-bottom: 0;
         }
     }
 }

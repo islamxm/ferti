@@ -42,12 +42,25 @@ body {
     padding-top: 153px;
 }
 
+@media (max-width: 1280px) {
+    .wrapper {
+        padding-top: 129px;
+    }
+}
+
+@media (max-width: 650px) {
+    .wrapper {
+        padding-top: 65px;
+    }
+}
+
 .main {
     width: 100%;
     padding-top: 90px;
     padding-left: 50px;
     overflow: hidden;
 }
+
 
 @media (max-width: 1200px) {
     .main {
