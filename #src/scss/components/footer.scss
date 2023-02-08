@@ -136,7 +136,33 @@
                     align-items: center;
                     justify-content: space-between;
                     font-size: 10px;
-                    line-height: 12px;    
+                    line-height: 12px;   
+                    
+                    &_w {
+                        position: relative;
+                        padding-left: 15px;
+
+                        span {
+                            width: 8px;
+                            height: 8px;
+                            background-image: url('../img/icons/walk.svg');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            display: inline-block;
+                            background-size: contain;
+                        }
+
+                        &:after {
+                            position: absolute;
+                            content: '';
+                            top: calc(50% - 5px);
+                            width: 10px;
+                            height: 10px;
+                            background-color: var(--blue);
+                            left: 0;
+                            border-radius: 100%;
+                        }
+                    }
                     
                     &_t {
                         text-transform: uppercase;
@@ -301,12 +327,15 @@
 
 @media (max-width: 768px) {
     .footer {
-
+        padding-bottom: 40px;   
         &__top {
 
             &_ph {
-
+                flex-direction: column;
+                align-items: flex-start ;
                 &_item {
+                    margin-bottom: 10px;
+
                     a {
                         font-size: 11px;
                         line-height: 15px;
@@ -345,6 +374,20 @@
                         a {
                             font-size: 12px;
                             line-height: 15px;
+                        }
+                    }
+                }
+            }
+
+            &_map {
+
+                &_info {
+
+                    &_item {
+                        flex-wrap: wrap;
+
+                        div {
+                            width: 100%;
                         }
                     }
                 }

@@ -725,10 +725,10 @@ body {
   height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  line-height: 24px;
   color: var(--text);
   background-color: #fff;
   overflow-x: hidden;
+  line-height: 30px;
 }
 
 .wrapper {
@@ -793,7 +793,7 @@ body {
 
 @media (max-width: 768px) {
   .page-title {
-    font-size: 30px;
+    font-size: 27px;
     line-height: 45px;
   }
 }
@@ -935,6 +935,9 @@ body {
 }
 .header__top {
   background-color: var(--light_bg);
+}
+.header__top_mp {
+  display: none;
 }
 .header__top_burger {
   display: none;
@@ -1478,6 +1481,28 @@ body {
   }
 }
 @media (max-width: 400px) {
+  .header__top_mp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 20px;
+  }
+  .header__top_mp_item {
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__top_mp_item svg {
+    width: 100%;
+    height: 100%;
+  }
+  .header__top_mp_item svg path {
+    fill: var(--orange);
+  }
   .header__top_main {
     display: none;
   }
@@ -2192,7 +2217,6 @@ body {
 .faqItem__body {
   font-weight: 500;
   font-size: 14px;
-  line-height: 25px;
   color: #3D3D3D;
   padding: 15px 30px;
 }
@@ -2244,7 +2268,6 @@ body {
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 30px;
 }
 .revItem__ath {
   font-size: 14px;
@@ -2273,7 +2296,6 @@ body {
   }
   .revItem__text {
     font-size: 14px;
-    line-height: 21px;
   }
 }
 .badges__in {
@@ -2420,6 +2442,29 @@ body {
   font-size: 10px;
   line-height: 12px;
 }
+.footer__main_map_info_item_w {
+  position: relative;
+  padding-left: 15px;
+}
+.footer__main_map_info_item_w span {
+  width: 8px;
+  height: 8px;
+  background-image: url("../img/icons/walk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  background-size: contain;
+}
+.footer__main_map_info_item_w:after {
+  position: absolute;
+  content: "";
+  top: calc(50% - 5px);
+  width: 10px;
+  height: 10px;
+  background-color: var(--blue);
+  left: 0;
+  border-radius: 100%;
+}
 .footer__main_map_info_item_t {
   text-transform: uppercase;
 }
@@ -2538,6 +2583,16 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .footer {
+    padding-bottom: 40px;
+  }
+  .footer__top_ph {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__top_ph_item {
+    margin-bottom: 10px;
+  }
   .footer__top_ph_item a {
     font-size: 11px;
     line-height: 15px;
@@ -2571,6 +2626,12 @@ body {
   .footer__main_body_part_item a {
     font-size: 12px;
     line-height: 15px;
+  }
+  .footer__main_map_info_item {
+    flex-wrap: wrap;
+  }
+  .footer__main_map_info_item div {
+    width: 100%;
   }
   .footer__bottom_in {
     flex-wrap: wrap;
@@ -2695,6 +2756,10 @@ body {
   padding-left: 0;
   padding-right: 0;
   position: absolute;
+  background-color: var(--light_bg);
+}
+.mobmenu__head_main_search .header__bottom_search_btn {
+  background-color: var(--light_bg);
 }
 .mobmenu__body {
   margin-bottom: 25px;
@@ -2784,6 +2849,49 @@ body {
 .mobmenu__actions_item .button {
   width: 100%;
 }
+.mobmenu__info_ph_item {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+.mobmenu__info_ad {
+  margin-bottom: 5px;
+  font-size: 10px;
+  line-height: 20px;
+}
+.mobmenu__info_w {
+  margin-bottom: 5px;
+  font-size: 10px;
+  line-height: 20px;
+}
+.mobmenu__info_w_item {
+  padding-left: 15px;
+  position: relative;
+}
+.mobmenu__info_w_item:after {
+  position: absolute;
+  top: calc(50% - 5px);
+  left: 0;
+  border-radius: 100%;
+  background-color: var(--blue);
+  width: 10px;
+  height: 10px;
+  content: "";
+}
+.mobmenu__info_w_item span {
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/icons/walk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+}
+.mobmenu__info_t {
+  font-size: 10px;
+  line-height: 20px;
+}
 
 .fixCont {
   position: fixed;
@@ -2857,6 +2965,78 @@ body {
     margin-bottom: 0;
   }
 }
+.starRating {
+  display: flex;
+  align-items: center;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+.starRating__item {
+  width: 14px;
+  height: 14px;
+  margin: 0 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.starRating__item svg {
+  width: 100%;
+  height: 100%;
+}
+.starRating__item svg path {
+  fill: #dddddd;
+}
+
+.starRating[data-value="1"] .starRating__item:nth-child(1) svg path {
+  fill: #F2BD42;
+}
+
+.starRating[data-value="2"] .starRating__item:nth-child(1) svg path {
+  fill: #F2BD42;
+}
+.starRating[data-value="2"] .starRating__item:nth-child(2) svg path {
+  fill: #F2BD42;
+}
+
+.starRating[data-value="3"] .starRating__item:nth-child(1) svg path {
+  fill: #F2BD42;
+}
+.starRating[data-value="3"] .starRating__item:nth-child(2) svg path {
+  fill: #F2BD42;
+}
+.starRating[data-value="3"] .starRating__item:nth-child(3) svg path {
+  fill: #F2BD42;
+}
+
+.starRating[data-value="4"] .starRating__item:nth-child(1) svg path {
+  fill: #F2BD42;
+}
+.starRating[data-value="4"] .starRating__item:nth-child(2) svg path {
+  fill: #F2BD42;
+}
+.starRating[data-value="4"] .starRating__item:nth-child(3) svg path {
+  fill: #F2BD42;
+}
+.starRating[data-value="4"] .starRating__item:nth-child(4) svg path {
+  fill: #F2BD42;
+}
+
+.starRating[data-value="5"] .starRating__item:nth-child(1) svg path {
+  fill: #F2BD42;
+}
+.starRating[data-value="5"] .starRating__item:nth-child(2) svg path {
+  fill: #F2BD42;
+}
+.starRating[data-value="5"] .starRating__item:nth-child(3) svg path {
+  fill: #F2BD42;
+}
+.starRating[data-value="5"] .starRating__item:nth-child(4) svg path {
+  fill: #F2BD42;
+}
+.starRating[data-value="5"] .starRating__item:nth-child(5) svg path {
+  fill: #F2BD42;
+}
+
 .pricingBlock__in {
   padding: 40px 0;
 }
@@ -3145,7 +3325,7 @@ body {
 .textBlock__body_r {
   padding-left: 40px;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .textBlock__body_r:after {
   position: absolute;

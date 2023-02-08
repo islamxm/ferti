@@ -68,7 +68,10 @@
                         padding-left: 0;
                         padding-right: 0;
                         position: absolute;
-
+                        background-color: var(--light_bg);
+                    }
+                    &_btn {
+                        background-color: var(--light_bg);
                     }
                 }
             }
@@ -182,5 +185,62 @@
             }
 
         }
+    }
+
+    &__info {
+
+        &_ph {
+
+            &_item {
+                font-weight: 600;
+                font-size: 14px;
+                margin-bottom: 5px;
+                display: block;
+            }
+        }
+
+        &_ad {
+            margin-bottom: 5px;
+            font-size: 10px;
+            line-height: 20px;
+        }
+
+        &_w {
+            margin-bottom: 5px;
+            font-size: 10px;
+            line-height: 20px;
+
+            &_item {
+                padding-left: 15px;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    top: calc(50% - 5px);
+                    left: 0;
+                    border-radius: 100%;
+                    background-color: var(--blue);
+                    width: 10px;
+                    height: 10px;
+                    content: '';
+                }
+
+                span {
+                    width: 10px;
+                    height: 10px;
+                    background-image: url('../img/icons/walk.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    display: inline-block;
+                }
+            }
+        }
+
+        &_t {
+            font-size: 10px;
+            line-height: 20px;
+        }
+        
     }
 }
