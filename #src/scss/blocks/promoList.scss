@@ -1,0 +1,24 @@
+.promoList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+
+
+
+    &__item {
+        width: calc((100% / 2) - 30px);
+        margin: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promoList {
+
+        &__item {
+            width: calc(100% - 30px);
+            
+        }
+    }
+}

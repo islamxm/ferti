@@ -1,0 +1,14 @@
+.pageHead {
+    text-align: left;
+    padding: 40px 0; 
+}
+
+.pageHead.center {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .pageHead {
+        padding: 30px 0;
+    }
+}
