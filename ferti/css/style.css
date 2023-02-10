@@ -3601,6 +3601,16 @@ body {
     justify-content: center;
   }
 }
+.revBody {
+  padding-bottom: 50px;
+}
+.revBody__action {
+  margin-bottom: 45px;
+}
+.revBody__item {
+  margin-bottom: 25px;
+}
+
 .MakeAppModal__in {
   max-width: 350px;
 }
