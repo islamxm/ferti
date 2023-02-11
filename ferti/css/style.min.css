@@ -3611,6 +3611,16 @@ body {
   margin-bottom: 25px;
 }
 
+.doctorsList {
+  padding-bottom: 80px;
+}
+.doctorsList__bgs .badges__in {
+  padding-top: 0;
+}
+.doctorsList__item {
+  margin-bottom: 30px;
+}
+
 .MakeAppModal__in {
   max-width: 350px;
 }
