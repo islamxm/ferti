@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ecoSlider();
     accordeon('.sidebar__main', '.sidebar__main_item');
     accordeon('.sidebar__nav', '.sidebar__nav_item');
+    accordeon('.pricesBlock__list', '.pricesBlock__item')
     // accordeon('.mobmenu__body', '.mobmenu__body_item-drop')
     // subacc('.mobmenu__body_item_menu_list', '.mobmenu__body_item_menu_item-submenu')
     dropdown('.drop-item')

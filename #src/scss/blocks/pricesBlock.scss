@@ -1,0 +1,164 @@
+.pricesBlock {
+    padding-bottom: 80px;
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 40px;
+        background-color: var(--blue);
+        color: #fff;
+
+        &_item {
+            width: 50%;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 18px;
+
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+
+    &__list {
+
+    }
+
+    &__item.active {
+        .pricesBlock__item_head {
+
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__item {
+        margin-bottom: 10px;
+
+        &_head {
+            padding: 20px 40px;
+            background: #F3F4FA;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 18px;
+            color: var(--blue);
+            font-style: italic;
+            position: relative;
+            cursor: pointer;
+
+            &:after {
+                position: absolute;
+                top: calc(50% - 10px);
+                right: 40px;
+                content: '';
+                background-image: url('../img/icons/chevron-down.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                width: 20px;
+                height: 20px;
+                @include def-anim;
+            }
+
+            &_label {
+                pointer-events: none;
+                touch-action: none;
+            }
+        }
+
+        &_body {
+            // height: 0;
+            // overflow: hidden;
+            // @include def-anim;
+
+            &_in {
+
+            }
+
+            &_item {
+                padding: 20px 40px;
+                border-bottom: 1px dashed #CECECE;
+
+                
+                &:last-child {
+                    border: none;
+                }
+
+                &_head {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                &_name {
+                    width: 50%;
+                }
+
+                &_value {
+                    width: 50%;
+                    text-align: right;
+                }
+
+                &_text {
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 24px;
+                    color: #AAAAAA;
+                    margin-top: 20px;
+                    width: 50%;
+
+                }
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .pricesBlock {
+
+        &__head {
+            padding: 15px 20px;
+            &_item {
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+
+        &__list {
+
+        }
+
+        &__item {
+
+            &_head {
+
+                font-size: 14px;
+                line-height: 19px;
+                padding: 15px 20px;
+            }
+
+            &_body {
+
+                &_item {
+                    font-size: 14px;
+                    line-height: 19px;
+                    padding: 15px 20px;
+
+                    &_head {
+                        
+                    }
+
+                    &_text {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
