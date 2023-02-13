@@ -43,3 +43,27 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .doctorTm {
+
+        &__body {
+
+            &_item {
+                width: calc((100% / 2) - 40px);
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .doctorTm {
+
+        &__body {
+
+            &_item {
+                width: calc(100% - 40px);
+            }
+        }
+    }
+}

@@ -2499,6 +2499,7 @@ body {
   font-size: 13px;
   line-height: 20px;
   margin-bottom: 20px;
+  opacity: 0.5;
 }
 .footer__bottom_main_links {
   display: flex;
@@ -3871,6 +3872,16 @@ body {
   line-height: 28px;
 }
 
+@media (max-width: 768px) {
+  .doctorTm__body_item {
+    width: calc(50% - 40px);
+  }
+}
+@media (max-width: 550px) {
+  .doctorTm__body_item {
+    width: calc(100% - 40px);
+  }
+}
 .doctorAs {
   padding: 30px 0;
 }
@@ -3905,6 +3916,16 @@ body {
   background: #F4F6FE;
 }
 
+@media (max-width: 768px) {
+  .doctorAs__body_item {
+    width: calc(50% - 14px);
+  }
+}
+@media (max-width: 550px) {
+  .doctorAs__body_item {
+    width: calc(100% - 14px);
+  }
+}
 .doctorSr {
   padding: 30px 0;
 }

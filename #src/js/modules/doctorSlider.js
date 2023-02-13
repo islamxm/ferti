@@ -6,12 +6,18 @@ const doctorSlider = () => {
 
     if(el) {
         const slider = new Swiper(el, {
-            spaceBetween: 50,
-            slidesPerView: 2,
+            spaceBetween: 20,
+            slidesPerView: 1,
             modules:[Navigation],
             navigation: {
                 prevEl: '.doctorSlider__nav_btn-prev',
                 nextEl: '.doctorSlider__nav_btn-next'
+            },
+            breakpoints: {
+                768: {
+                    spaceBetween: 50,
+                    slidesPerView: 2,
+                }
             }
         })
     }

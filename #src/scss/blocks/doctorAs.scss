@@ -35,3 +35,27 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .doctorAs {
+
+        &__body {
+
+            &_item {
+                width: calc((100% / 2) - 14px);
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .doctorAs {
+
+        &__body {
+
+            &_item {
+                width: calc(100% - 14px);
+            }
+        }
+    }
+}
