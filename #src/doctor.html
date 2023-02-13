@@ -11,9 +11,15 @@
             <main class="main">
                 @@include('./html/components/bc.html')
                 @@include('./html/blocks/pageHead.html', {
-                    "title": "ОТЗЫВЫ"
+                    "title": "АНШИНА МАРГАРИТА БЕНИАМИНОВНА"
                 })
-                @@include('./html/blocks/revBody.html')
+                @@include('./html/components/doctorCard.html')
+                @@include('./html/blocks/doctorDescr.html')
+                @@include('./html/blocks/doctorSlider.html')
+                @@include('./html/blocks/doctorTm.html')
+                @@include('./html/blocks/doctorAs.html')
+                @@include('./html/blocks/doctorSr.html')
+                @@include('./html/blocks/doctorRevs.html')
             </main>
         </div>
     </div>
@@ -23,6 +29,7 @@
     @@include('./html/modals/CookiesModal.html')
     @@include('./html/modals/CityModal.html')
     @@include('./html/modals/AddRevModal.html')
+
     @@include('./html/components/mobmenu.html')
     @@include('./html/components/fixCont.html')
     <script src="js/app.min.js"></script>

@@ -23,6 +23,7 @@
 @import './components/fixCont.scss';
 @import './components/starRating.scss';
 @import './components/promoCard.scss';
+@import './components/stars.scss';
 
 
 //blocks
@@ -39,10 +40,17 @@
 @import './blocks/revBody.scss';
 @import './blocks/doctorsList.scss';
 @import './blocks/pricesBlock.scss';
+@import './blocks/doctorSlider.scss';
+@import './blocks/doctorDescr.scss';
+@import './blocks/doctorTm.scss';
+@import './blocks/doctorAs.scss';
+@import './blocks/doctorSr.scss';
+@import './blocks/doctorRevs.scss';
 
 @import './modals/MakeAppModal.scss';
 @import './modals/CookiesModal.scss';
 @import './modals/CityModal.scss';
+@import './modals/AddRevModal.scss';
 
 //pages
 

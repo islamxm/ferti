@@ -7,6 +7,8 @@ import MicroModal from 'micromodal';
 import subacc from './modules/subacc.js';
 import mobmenu from './modules/mobmenu.js';
 import shText from './modules/shText.js';
+import doctorSlider from './modules/doctorSlider.js';
+import doctorSr from './modules/doctorSr.js';
 
 flsFuncs.isWebp();
 
@@ -28,6 +30,17 @@ document.addEventListener('DOMContentLoaded', () => {
     MicroModal.init({
         disableScroll: true
     });
+    doctorSlider();
+    doctorSr();
 
+    let revStars = document.querySelectorAll('.item__stars_el');
 
+    if(revStars) {
+        revStars.forEach(item => {
+            item.addEventListener('click', () => {
+                const { itemValue } = item.dataset;
+                item.parentNode.dataset.totalValue = itemValue;
+            })
+        })
+    }
 })

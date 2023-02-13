@@ -1,0 +1,30 @@
+.doctorDescr {
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+        margin-bottom: 10px;
+        padding-left: 25px;
+        position: relative;
+        font-weight: 500;
+        
+        &:after {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            top: calc(50% - 7.5px);
+            left: 0;
+            content: '';
+            background-image: url('../img/icons/check-orange.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}

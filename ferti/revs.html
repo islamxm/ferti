@@ -628,7 +628,7 @@
 </div>
                 <div class="revBody">
     <div class="revBody__action">
-        <button class="button blue">ОСТАВИТЬ СВОЙ ОТЗЫВ</button>
+        <button class="button blue" data-micromodal-trigger="AddRevModal">ОСТАВИТЬ СВОЙ ОТЗЫВ</button>
     </div>
     <div class="revBody__list">
         <div class="revBody__item">
@@ -1125,7 +1125,72 @@
 
 
 
-
+    <div class="AddRevModal modal" id="AddRevModal">
+    <div class="modal__layer" data-micromodal-close>
+        <div class="modal__in AddRevModal__in">
+            <button class="modal__close">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.728 10.5921L20.741 1.5756C20.8216 1.49494 20.8856 1.39918 20.9292 1.29379C20.9729 1.1884 20.9953 1.07544 20.9953 0.96137C20.9953 0.847296 20.9729 0.73434 20.9292 0.62895C20.8856 0.52356 20.8216 0.4278 20.741 0.347137C20.6604 0.266475 20.5646 0.20249 20.4593 0.158836C20.3539 0.115182 20.241 0.0927143 20.127 0.0927143C20.013 0.0927143 19.9001 0.115182 19.7947 0.158836C19.6894 0.20249 19.5936 0.266475 19.513 0.347137L10.5 9.2709L1.487 0.254423C1.40636 0.173761 1.31064 0.109776 1.20529 0.0661222C1.09994 0.0224681 0.987029 8.49915e-10 0.872999 0C0.75897 -8.49915e-10 0.646057 0.0224681 0.540707 0.0661222C0.435357 0.109776 0.339633 0.173761 0.259002 0.254423C0.178371 0.335085 0.114412 0.430845 0.0707745 0.536235C0.0271373 0.641626 0.00467669 0.754582 0.00467669 0.868656C0.00467669 0.982729 0.0271373 1.09569 0.0707745 1.20108C0.114412 1.30647 0.178371 1.40223 0.259002 1.48289L9.27201 10.5921L0.259002 19.5158C0.177031 19.5957 0.111883 19.6912 0.0674004 19.7967C0.0229175 19.9022 0 20.0156 0 20.1301C0 20.2446 0.0229175 20.3579 0.0674004 20.4634C0.111883 20.5689 0.177031 20.6644 0.259002 20.7443C0.335299 20.8275 0.428572 20.8933 0.532505 20.9373C0.636438 20.9813 0.748606 21.0024 0.861414 20.9993C0.977696 21.0028 1.09342 20.9819 1.20116 20.938C1.3089 20.8941 1.40626 20.8281 1.487 20.7443L10.5 11.7278L19.513 20.7443C19.5893 20.8275 19.6826 20.8933 19.7865 20.9373C19.8904 20.9813 20.0026 21.0024 20.1154 20.9993C20.2319 21.0042 20.348 20.984 20.456 20.94C20.564 20.896 20.6612 20.8293 20.741 20.7443C20.823 20.6644 20.8881 20.5689 20.9326 20.4634C20.9771 20.3579 21 20.2446 21 20.1301C21 20.0156 20.9771 19.9022 20.9326 19.7967C20.8881 19.6912 20.823 19.5957 20.741 19.5158L11.728 10.5921Z" fill="#ACACAC"/>
+                    </svg>
+                    
+            </button>
+            <h2 class="modal__head center AddRevModal__head">ОСТАВИТЬ ОТЗЫВ</h2>
+            <form class="modal__body AddRevModal__body">
+                <div class="AddRevModal__body_fds">
+                    <div class="AddRevModal__body_fds_part">
+                        <div class="AddRevModal__body_fds_part_item">
+                            <div class="input">
+                                <input type="text" class="input__el" placeholder="ПРЕДСТАВЬТЕСЬ">
+                            </div>
+                        </div>
+                        <div class="AddRevModal__body_fds_part_item">
+                            <div class="input">
+                                <input type="text" class="input__el" placeholder="УКАЖИТЕ EMAIL">
+                            </div>
+                        </div>
+                        <div class="AddRevModal__body_fds_part_item">
+                            <div class="input">
+                                <input type="text" class="input__el" placeholder="ВАШ ВРАЧ">
+                            </div>
+                        </div>
+                        <div class="AddRevModal__body_fds_part_item">
+                            <div class="AddRevModal__body_fds_part_item_st">
+                                <div class="AddRevModal__body_fds_part_item_st_label">ВАША ОЦЕНКА</div>
+                                <div class="stars">
+    <div class="item__stars" data-total-value="0">
+      <!-- <input type="radio">
+      <input type="radio">
+      <input type="radio">
+      <input type="radio">
+      <input type="radio"> -->
+      <div class="item__stars_el" data-item-value="5">	&#9733;</div>
+      <div class="item__stars_el" data-item-value="4">	&#9733;</div>
+      <div class="item__stars_el" data-item-value="3">	&#9733;</div>
+      <div class="item__stars_el" data-item-value="2">	&#9733;</div>
+      <div class="item__stars_el" data-item-value="1">	&#9733;</div>
+    </div>
+  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="AddRevModal__body_fds_part">
+                        <div class="AddRevModal__body_fds_part_item fill">
+                            <textarea placeholder="СООБЩЕНИЕ"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="AddRevModal__body_ex">
+                    <p>
+                        Нажимая кнопку «Отправить заявку», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных
+                    </p>
+                </div>
+                <div class="AddRevModal__body_action">
+                    <button class="button orange">ОТПРАВИТЬ ОТЗЫВ</button>
+                </div>
+            </form> 
+        </div>
+    </div>
+</div>
     <div class="mobmenu">
     <div class="mobmenu__head">
         <button class="mobmenu__head_close"></button>

@@ -263,3 +263,14 @@ body {
     }
 
 }
+
+@media (max-width: 768px) {
+    .modal {
+        &__layer {
+            padding: 10px 15px;
+        }
+        &__close {
+            display: none;
+        }
+    }
+}

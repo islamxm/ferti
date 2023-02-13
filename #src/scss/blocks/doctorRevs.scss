@@ -1,0 +1,76 @@
+.doctorRevs {
+    padding: 30px 0;
+
+    &__head {
+        margin-bottom: 30px;
+    }
+
+    &__tabs {
+        display: flex;  
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        &_item {
+            cursor: pointer;
+            padding: 25px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            background: #FFFFFF;
+            border: 1px solid rgba(173, 185, 250, 0.55);
+            border-radius: 2px;
+            @include def-anim;
+
+            &:hover {
+                background: #F4F6FE;
+                border: 1px solid rgba(173, 185, 250, 0.55);
+                border-radius: 2px;
+            }
+        }
+
+        &_item.active {
+            background: #F4F6FE;
+            border: 1px solid rgba(173, 185, 250, 0.55);
+            border-radius: 2px;
+        }
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+    }
+
+    &__body {
+
+        &_l {
+
+            &_item {
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .doctorRevs {
+
+        &__tabs {
+
+            &_item {
+                padding: 20px;
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+    }
+}
