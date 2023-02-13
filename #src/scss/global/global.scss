@@ -274,3 +274,38 @@ body {
         }
     }
 }
+
+.menu-item {
+
+    .menu-item-body {
+        display: none;
+    }
+}
+
+.menu-item.active {
+    .menu-item-head {
+        &:after {
+            transform: rotate(180deg);
+        }
+    }
+    .menu-item-body {
+        display: block;
+    }
+}
+
+.submenu-item {
+    .submenu-item-body {
+        display: none;
+    }
+}
+
+.submenu-item.active {
+    .submenu-item-head {
+        &:after {
+            transform: rotate(180deg);
+        }
+    }
+    .submenu-item-body {
+        display: block;
+    }
+}

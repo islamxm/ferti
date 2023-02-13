@@ -43,4 +43,26 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         })
     }
+
+
+    const menuItems = document.querySelectorAll('.menu-item');
+    const submenuItems = document.querySelectorAll('.submenu-item');
+    if(menuItems?.length > 0) {
+        menuItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                if(e.target.classList.contains('menu-item-head')) {
+                    e.target.parentElement.classList.toggle('active');
+                }
+            })
+        })
+    }
+    if(submenuItems?.length > 0) {
+        submenuItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                if(e.target.classList.contains('submenu-item-head')) {
+                    e.target.parentElement.classList.toggle('active')
+                }
+            })
+        })
+    }
 })

@@ -24,7 +24,6 @@
         justify-content: space-between;
         margin-bottom: 25px;
         
-
         &_close {
             width: 20px;
             height: 20px;
@@ -34,6 +33,7 @@
             background-size: contain;
             flex: 0 0 auto;
         }
+
         &_main {
             display: flex;
             align-items: center;
@@ -82,13 +82,14 @@
         margin-bottom: 25px;
         flex: 1 0 auto;
 
+
         
 
         &_item {
             border-bottom: 1px dashed #C7C7C7;
 
 
-            &_head.acc-head {
+            &_head.menu-item-head{
 
                 &:after {
                     display: block;
@@ -119,14 +120,17 @@
             }
 
             &_menu {
-                height: 0;
-                overflow: hidden;
-                @include def-anim;
+                // height: 0;
+                // overflow: hidden;
+                // @include def-anim;
+                // display: none;
 
                 &_list {
                     padding: 12px;
                     padding-right: 0;
                 }
+
+            
 
                 &_item {
                     padding: 5px 0;
@@ -165,9 +169,14 @@
                     }
 
                     &_menu {
-                        height: 0;
-                        overflow: hidden;
-                        @include def-anim;
+                        // height: 0;
+                        // overflow: hidden;
+                        // @include def-anim;
+                        padding: 5px 0;
+
+                        li {
+                            padding: 5px 0;
+                        }
                     }
                 }
             }
