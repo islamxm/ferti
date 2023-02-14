@@ -9,7 +9,7 @@
         margin-bottom: 15px;
         display: flex;
         align-items: center;
-
+        
         &_avatar {
             width: 83px;
             height: 83px;
@@ -38,15 +38,15 @@
 
             &_name {
                 font-weight: 600;
-                font-size: 18px;
-                line-height: 22px;
-                margin-bottom: 5px;
+                // font-size: 18px;
+                // line-height: 22px;
+                margin-bottom: 2px;
             }
 
             &_date {
                 font-weight: 400;
-                font-size: 16px;
-                line-height: 18px;
+                // font-size: 16px;
+                // line-height: 18px;
                 color: #868686;
             }
         }
@@ -58,9 +58,11 @@
     }
 
     &__ath {
-        font-size: 14px;
+        // font-size: 14px;
         font-weight: 600;
-        line-height: 18px;
+        // line-height: 18px;
+        font-size: 13px;
+        line-height: 16px;
 
         span {
             color: var(--blue);

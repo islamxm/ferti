@@ -12,8 +12,8 @@
         &_item {
             width: 50%;
             font-weight: 600;
-            font-size: 16px;
-            line-height: 18px;
+            font-size: 14px;
+            line-height: 17px;
 
             &:last-child {
                 text-align: right;
@@ -41,8 +41,8 @@
             padding: 20px 40px;
             background: #F3F4FA;
             font-weight: 600;
-            font-size: 18px;
-            line-height: 18px;
+            font-size: 14px;
+            line-height: 17px;
             color: var(--blue);
             font-style: italic;
             position: relative;
@@ -102,7 +102,7 @@
                 }
 
                 &_text {
-                    font-weight: 500;
+                    // font-weight: 500;
                     font-size: 13px;
                     line-height: 24px;
                     color: #AAAAAA;
