@@ -33,6 +33,61 @@
                 // line-height: 25px;
             }
         }
+
+        
+    }
+    &__list.textBlock__list-light {
+
+        ul {
+            li {
+                span {
+                    // background-color: var(--orange);
+                    background-color: unset;
+                    background-image: url('../img/icons/check-orange.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+
+    &__list {
+        padding: 20px 0;
+        &_head {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 32px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            li {
+                display: flex;
+                align-items: flex-start;
+                font-weight: 500;
+                padding: 10px 0;
+                position: relative;
+
+                span {
+                    margin-top: 5px;
+                    margin-right: 10px;
+                    width: 15px;
+                    flex: 0 0 auto;
+                    height: 15px;
+                    border-radius: 100%;
+                    background-color: var(--blue);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #fff;
+                    font-size: 7px;
+                    line-height: 7px;
+
+                }
+            }
+        }
     }
 
     &__body > p {
