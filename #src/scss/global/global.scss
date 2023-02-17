@@ -144,7 +144,8 @@ body {
     z-index: -1;
     transform: scale(0) translateY(24px);
     @include def-anim;
-    padding: 15px 25px;
+    // padding: 15px 25px;
+    padding: 15px 0;
 }
 
 .drop-item.active {
@@ -156,10 +157,10 @@ body {
 }
 
 .drop-menu {
-
+    
     &__item {
-        padding: 7px 0;
-        border-bottom: 1px dashed rgba(173, 185, 250, 0.55);
+        // padding: 7px 0;
+        
         &:last-child {
             border: none
         }
@@ -169,7 +170,18 @@ body {
             font-size: 13px;
             line-height: 16px;
             display: block;
+            padding: 10px 15px;
             @include def-anim;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                bottom: 0;
+                left: calc(50% - ((100% - 30px) / 2));
+                width: calc(100% - 30px);
+                border-bottom: 1px dashed rgba(173, 185, 250, 0.55);
+                content: '';
+            }
 
             &:hover {
                 color: var(--blue);
